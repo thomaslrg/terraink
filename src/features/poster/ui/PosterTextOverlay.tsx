@@ -106,36 +106,6 @@ export default function PosterTextOverlay({
           </p>
         </>
       )}
-
-      <span
-        className="poster-attribution"
-        style={{
-          fontFamily: bodyFont,
-          color: attributionColor,
-          opacity: attributionOpacity,
-          fontSize: attributionFontSize,
-          bottom: `${TEXT_EDGE_MARGIN_RATIO * 100}%`,
-          right: `${TEXT_EDGE_MARGIN_RATIO * 100}%`,
-        }}
-      >
-        &copy; OpenStreetMap contributors
-      </span>
-
-      {includeCredits && (
-        <span
-          className="poster-credits"
-          style={{
-            fontFamily: bodyFont,
-            color: attributionColor,
-            opacity: attributionOpacity,
-            fontSize: attributionFontSize,
-            bottom: `${TEXT_EDGE_MARGIN_RATIO * 100}%`,
-            left: `${TEXT_EDGE_MARGIN_RATIO * 100}%`,
-          }}
-        >
-          © {APP_CREDIT_URL}
-        </span>
-      )}
     </div>
   );
 }
